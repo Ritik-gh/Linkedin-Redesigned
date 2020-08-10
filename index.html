@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./linkedin.css">
+    <title>Linkedin redefined</title>
+</head>
+<body>
+    <div class="homepage" id="app">
+        <header class="">
+            <nav class="nav1">
+                <div class="left">
+                    <img class="pp-x-small logo pointer" src="./assets/logo.png" alt="logo">
+                    <parts class="margin-x" style="color:rgba(169, 168, 168,.4);">|</parts>
+                    <span class="heading pointer">Discover</span>
+                </div>
+                <div class="center">
+                    <input class="input-search" type="text" placeholder="&#128269 Search Linkedin">
+                </div>
+                <div class="right">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message-circle pointer" width="25" height="25" viewBox="0 0 24 24" stroke-width="1" stroke="#adaeae" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z"/>
+                      <path d="M3 20l1.3 -3.9a9 8 0 1 1 3.4 2.9l-4.7 1" />
+                      <line x1="12" y1="12" x2="12" y2="12.01" />
+                      <line x1="8" y1="12" x2="8" y2="12.01" />
+                      <line x1="16" y1="12" x2="16" y2="12.01" />
+                    </svg>
+                    <svg class="margin-x" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dashboard pointer" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#adaeae" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z"/>
+                      <circle cx="12" cy="13" r="2" />
+                      <line x1="13.45" y1="11.55" x2="15.5" y2="9.5" />
+                      <path d="M6.4 20a9 9 0 1 1 11.2 0Z" />
+                    </svg>
+                    <img class="pp-x-small" src="./assets/pp4.jpg" alt="Profile picture icon" height="25px" width="25px">
+                </div>
+                <img class="pp-x-small mobile-img" src="./assets/pp4.jpg">
+            </nav>
+            <nav class="nav2">
+                <span class="nav2-items nav2-1 heading">Posts</span>
+                <span class="nav2-items sub-heading">Articles</span>
+                <span class="nav2-items sub-heading">Companies</span>
+                <span class="nav2-items sub-heading">Jobs</span>
+            </nav>
+        </header>
+
+        <main>
+
+            <aside class="profile">
+                <img class="profile-pic pointer" src="./assets/pp4.jpg" alt="Profile Picture" height="110" width="110">
+                <div class="name-about profile-name-about pointer">
+                    <name>Caroline Belfort</name>
+                    <about>Statton Oakmont</about>
+                </div>
+                <div class="connects">
+                    <p class="heading">358</p>
+                    <p class="text">Connections</p>
+                </div>
+                <div class="views">
+                    <p class="heading">25</p>
+                    <p class="text">Views</p>
+                </div>
+                <p class="profile-view sub-heading pointer">View my profile</p>
+            </aside>
+
+            <section class="posts">
+
+                <article class="new-post">
+                    <div class="new-post-upper">
+                        <div class="icon-text icon-text-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="20" height="20" viewBox="0 0 24 24" stroke-width="1" stroke="#0058a2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z"/>
+                              <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4" />
+                              <line x1="13.5" y1="6.5" x2="17.5" y2="10.5" />
+                            </svg>
+                            <span class="heading">Share an update</span>
+                        </div>
+                        <div class="icon-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-photo" width="22" height="22" viewBox="0 0 24 24" stroke-width="1" stroke="#e1bb00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z"/>
+                              <line x1="15" y1="8" x2="15.01" y2="8" />
+                              <rect x="4" y="4" width="16" height="16" rx="3" />
+                              <path d="M4 15l4 -4a3 5 0 0 1 3 0l 5 5" />
+                              <path d="M14 14l1 -1a3 5 0 0 1 3 0l 2 2" />
+                            </svg>
+                            <span class="sub-heading">Upload a photo</span>
+                        </div>
+                        <div class="icon-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-edit" width="22" height="22" viewBox="0 0 24 24" stroke-width="1" stroke="#01ab5d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z"/>
+                              <path d="M9 7 h-3a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-3" />
+                              <path d="M9 15h3l8.5 -8.5a1.5 1.5 0 0 0 -3 -3l-8.5 8.5v3" />
+                              <line x1="16" y1="5" x2="19" y2="8" />
+                            </svg>
+                            <span class="sub-heading">Write an article</span>
+                        </div>
+                    </div>
+                    <div class="new-post-lower">
+                        <input class="input-write" type="text" placeholder="Write something...">
+                    </div>
+                </article>
+
+                <article class="post">
+                    <div class="person-active">
+                        <div class="person">
+                            <img class="pp" src="./assets/pp6.jpg" alt="pp1">
+                            <div class="name-about">
+                                <name>Bernard Arnault</name>
+                                <about>CEO at LVMH</about>
+                            </div>
+                        </div>
+                        <span class="text">3 hours</span>
+                    </div>
+                    <p class="margin-bottom text">Lea Seydoux and Patrick Demarchelier on set for new Frangrance
+                    campaign from Louis Vuitton. Les Parfums Louis Vuitton are now available
+                    in selected Louis Vuitton stores at <a href="#">http://Vuitton.lv/2bTfRt1</a>
+                    </p>
+                    <div class="post-options">
+                        <div class="bind">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart pointer" width="22" height="22" viewBox="0 0 24 24" stroke-width="1.5" stroke="#adaeae" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z"/>
+                              <path d="M12 20l-7 -7a4 4 0 0 1 6.5 -6a.9 .9 0 0 0 1 0a4 4 0 0 1 6.5 6l-7 7" />
+                            </svg>
+                            <span class="text">2</span>
+                        </div>
+                        <div class="bind">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message pointer" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#adaeae" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z"/>
+                              <path d="M4 21v-13a3 3 0 0 1 3 -3h10a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-9l-4 4" />
+                              <line x1="8" y1="9" x2="16" y2="9" />
+                              <line x1="8" y1="13" x2="14" y2="13" />
+                            </svg>
+                            <span class="text">2</span>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-share pointer" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#adaeae" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z"/>
+                          <circle cx="6" cy="12" r="3" />
+                          <circle cx="18" cy="6" r="3" />
+                          <circle cx="18" cy="18" r="3" />
+                          <line x1="8.7" y1="10.7" x2="15.3" y2="7.3" />
+                          <line x1="8.7" y1="13.3" x2="15.3" y2="16.7" />
+                        </svg>
+                    </div>
+                    <div class="person-active">
+                        <div class="person">
+                            <img class="pp-small" src="./assets/pp10.jpg" alt="pp1">
+                            <div class="name-about">
+                                <name>Alexandra Samit</name>
+                                <about>This new campaign is really awesome.</about>
+                            </div>
+                        </div>
+                        <span class="text">10 mins</span>
+                    </div>
+                    <div class="person-active">
+                        <div class="person">
+                            <img class="pp-small" src="./assets/pp9.jpg" alt="pp1">
+                            <div class="name-about">
+                                <name>Jeremy Renault</name>
+                                <about>Looking forward to try it.</about>
+                            </div>
+                        </div>
+                        <span class="text">1 hour</span>
+                    </div>
+                    <p class="text padding-top pointer">Add Comment</p>
+                </article>
+
+                <article class="post">
+                    <div class="person-active">
+                        <div class="person">
+                            <img class="pp" src="./assets/pp3.jpg" alt="pp1">
+                            <div class="name-about">
+                                <name>James Terricote</name>
+                                <about>CEO at Air France</about>
+                            </div>
+                        </div>
+                        <span class="text">10 mins</span>
+                    </div>
+                    <p class="margin-bottom text">France is in the air. New campaign online: <a href="#">http://linkd.in/3red</a></p>
+                    <picture>
+                        <source  class="margin-bottom padding-x-auto" srcset="./assets/pic1-desk.jpg"  media="(min-width:550px)">
+                        <source  class="margin-bottom padding-x-auto" srcset="./assets/pic1.jpg"  media="(min-width:350px)">
+                        <img  class="margin-bottom" src="./assets/pic1-x-small.jpg" alt="pic1-x-small">
+                    </picture>
+                    <div class="post-options">
+                        <div class="bind">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart pointer" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#adaeae" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z"/>
+                              <path d="M12 20l-7 -7a4 4 0 0 1 6.5 -6a.9 .9 0 0 0 1 0a4 4 0 0 1 6.5 6l-7 7" />
+                            </svg>
+                            <span class="text">34</span>
+                        </div>
+                        <div class="bind">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message pointer" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#adaeae" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z"/>
+                              <path d="M4 21v-13a3 3 0 0 1 3 -3h10a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-9l-4 4" />
+                              <line x1="8" y1="9" x2="16" y2="9" />
+                              <line x1="8" y1="13" x2="14" y2="13" />
+                            </svg>
+                            <span class="text">1</span>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-share pointer" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#adaeae" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z"/>
+                          <circle cx="6" cy="12" r="3" />
+                          <circle cx="18" cy="6" r="3" />
+                          <circle cx="18" cy="18" r="3" />
+                          <line x1="8.7" y1="10.7" x2="15.3" y2="7.3" />
+                          <line x1="8.7" y1="13.3" x2="15.3" y2="16.7" />
+                        </svg>
+                    </div>
+                    <div class="person-active">
+                        <div class="person">
+                            <img class="pp-small" src="./assets/pp10.jpg" alt="pp1">
+                            <div class="name-about">
+                                <name>Alexandra Samit</name>
+                                <about>This new campaign is really awesome.</about>
+                            </div>
+                        </div>
+                        <span class="text">2 mins</span>
+                    </div>
+                    <p class="text padding-top pointer">Add Comment</p>
+                </article>
+
+                <article class="post">
+                    <div class="person-active">
+                        <div class="person">
+                            <img class="pp" src="./assets/zara.png" alt="pp1">
+                            <div class="name-about">
+                                <name>Zara UK</name>
+                                <about>Apparel Brand</about>
+                            </div>
+                        </div>
+                        <span class="text">Yesterday</span>
+                    </div>
+                    <p class="margin-bottom text">Join life.Check out latest publication here: <a href="#">http://zara.com/45dfrt</a></p>
+                    <div class="post-link margin-bottom">
+                        <img class="margin-right" src="./assets/pic2.jpeg" alt="pic2" height="180px" width="180px">
+                        <div class="flex-cols">
+                            <p class="text">Healthy food</p>
+                            <p class="text">Choosing healthier foods is easier than you may think.
+                            By changing just a few eating habits can make a big
+                            difference to your diet. Making small changes to diet is the...</p>
+                        </div>
+                    </div>
+                    <div class="post-options">
+                        <div class="bind">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart pointer" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#adaeae" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z"/>
+                              <path d="M12 20l-7 -7a4 4 0 0 1 6.5 -6a.9 .9 0 0 0 1 0a4 4 0 0 1 6.5 6l-7 7" />
+                            </svg>
+                            <span class="text">7</span>
+                        </div>
+                        <div class="bind">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message pointer" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#adaeae" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z"/>
+                              <path d="M4 21v-13a3 3 0 0 1 3 -3h10a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-9l-4 4" />
+                              <line x1="8" y1="9" x2="16" y2="9" />
+                              <line x1="8" y1="13" x2="14" y2="13" />
+                            </svg>
+                            <span class="text">0</span>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-share pointer" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#adaeae" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z"/>
+                          <circle cx="6" cy="12" r="3" />
+                          <circle cx="18" cy="6" r="3" />
+                          <circle cx="18" cy="18" r="3" />
+                          <line x1="8.7" y1="10.7" x2="15.3" y2="7.3" />
+                          <line x1="8.7" y1="13.3" x2="15.3" y2="16.7" />
+                        </svg>
+                    </div>
+                </article>
+
+            </section>
+
+            <aside class="people">
+                <div class="keep-in-touch heading">Keep in touch</div>
+                <div class="flex-cols space-evenly">
+                    <div class="person">
+                        <img class="pp-small" src="./assets/pp7.jpg" alt="pp1">
+                        <div class="name-about">
+                            <name>Helen Johnson</name>
+                            <about>CEO and Founder</about>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <img class="pp-small" src="./assets/pp1.jpg" alt="pp1">
+                        <div class="name-about">
+                            <name>Emily Mc Laren</name>
+                            <about>UI designer</about>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <img class="pp-small" src="./assets/pp8.jpg" alt="pp1">
+                        <div class="name-about">
+                            <name>James Johns</name>
+                            <about>CTO</about>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <img class="pp-small" src="./assets/pp5.jpg" alt="pp1">
+                        <div class="name-about">
+                            <name>Cynthia Aurele</name>
+                            <about>Project Manager</about>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </main>
+    </div>
+
+    <script src="./linkedin.js"></script>
+</body>
+</html>
