@@ -150,8 +150,15 @@ header{
 }
 .nav1{
     grid-area:nav1;
-    display:flex;
+    display:grid;
+    grid-gap:0;
+    grid-template-rows:auto;
+    grid-template-columns: 290px 555px 290px;
+    justify-content:center;
     align-items:center;
+    grid-template-areas:
+    "left center right"
+    ;
     border-bottom:1px solid rgba(169, 168, 168,.2);
     background-color:white;
 }
@@ -160,16 +167,16 @@ header{
     to{justify-content:space-evenly}
 }
 .left{
-    width:30%;
+    grid-area:left;
     display:flex;
-    justify-content:center;
+    justify-content:flex-start;
     align-items:center;
 }
 .logo{
     border-radius:20%;
 }
 .center{
-    width:40%;
+    grid-area:center;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -183,9 +190,9 @@ header{
     background-color:#f7f8f9;
 }
 .right{
-    width:30%;
+    grid-area:right;
     display:flex;
-    justify-content:center;
+    justify-content:flex-end;
     align-items:center;
 }
 .nav2{
@@ -346,9 +353,8 @@ section{
         display:none;
     }
     .homepage{
-        display:grid;
-        grid-gap:10px;
-        grid-template-rows:50px auto;
+        grid-gap:20px;
+        grid-template-rows:60px auto;
         grid-template-columns:var(--page-width);
         grid-template-areas:
         "header"
@@ -356,30 +362,43 @@ section{
     }
     .nav1{
         height:100%;
+        display:flex;
         justify-content:space-evenly;
+    }
+    .left{
+        width:30%;
+        justify-content:center;
+    }
+    .center{
+        width:40%;
+        justify-content:center;
+    }
+    .right{
+        width:30%;
+        justify-content:center;
     }
     .input-search {
         height: 35px;
-        padding: 15px;
+        padding: 5px 15px;
+        border-radius:20px;
     }
     header{
         display:block;
-        height:50px;
+        height:60px;
     }
     .nav2{
         position:fixed;
         bottom:0px;
-        height:50px;
-        width:100vw;
-        display:flex;
-        justify-content:center;
+        height:60px;
+        width:100%;
+        z-index:1;
+        justify-content:space-evenly;
+        border:none;
         border-top:1px solid rgba(169, 168, 168,.2);
-        background-color:#f7f8f9;
     }
     .nav2-items{
-        margin:0 10px;
-        padding:0 10px;
-        line-height:50px;
+        margin:0px;
+        line-height:60px;
         cursor:pointer;
     }
     .nav2-1{
