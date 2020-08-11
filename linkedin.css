@@ -151,7 +151,7 @@ header{
 .nav1{
     grid-area:nav1;
     display:grid;
-    grid-gap:0;
+    grid-gap:30px;
     grid-template-rows:auto;
     grid-template-columns: 290px 555px 290px;
     justify-content:center;
@@ -363,6 +363,7 @@ section{
     .nav1{
         height:100%;
         display:flex;
+        grid-gap:0;
         justify-content:space-evenly;
     }
     .left{
